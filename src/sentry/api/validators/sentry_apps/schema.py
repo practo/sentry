@@ -242,6 +242,27 @@ SCHEMA = {
             },
             'required': ['type', 'title', 'elements'],
         },
+
+        'issue-open-in-link': {
+            'type': 'object',
+            'properties': {
+                'type': {
+                    'type': 'string',
+                    'enum': ['issue-open-in-link'],
+                },
+                'uri': {
+                    '$ref': '#/definitions/uri',
+                },
+                'params': {
+                    'type': 'array',
+                    'items': {
+                        'type': 'string',
+                        'enum': ['project', 'filename', 'lineno']
+                    },
+                },
+            },
+            'required': ['type', 'uri']
+        },
     },
 
     'properties': {
@@ -253,6 +274,7 @@ SCHEMA = {
                     {'$ref': '#/definitions/issue-link'},
                     {'$ref': '#/definitions/alert-rule-action'},
                     {'$ref': '#/definitions/issue-media'},
+                    {'$ref': '#/definitions/issue-open-in-link'},
                 ],
             },
         },
