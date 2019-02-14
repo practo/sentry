@@ -6,7 +6,7 @@ exclude: >
         \.map\.js$|
         ^tests/sentry/lang/.*/fixtures/|
         ^tests/fixtures/|
-        ^src/sentry/static/sentry/vendor/|
+        ^static/vendor/|
         ^tests/sentry/lang/javascript/example-project/|
         ^src/.*/locale/|
         ^src/sentry/data/

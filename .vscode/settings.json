@@ -10,7 +10,7 @@
     "*.log": true,
     "*.egg-info": true,
     "src/sentry/locale": true,
-    "src/sentry/static/sentry/dist/": true
+    "static/dist/": true
   },
   "search.followSymlinks": false,
   "files.trimTrailingWhitespace": true,

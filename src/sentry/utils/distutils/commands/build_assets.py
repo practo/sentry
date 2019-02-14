@@ -38,7 +38,7 @@ class BuildAssetsCommand(BaseBuildCommand):
 
     def get_dist_paths(self):
         return [
-            'src/sentry/static/sentry/dist',
+            'static/dist',
         ]
 
     def get_manifest_additions(self):

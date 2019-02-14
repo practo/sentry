@@ -1,4 +1,4 @@
-STATIC_DIR = src/sentry/static/sentry
+STATIC_DIR = static
 
 ifneq "$(wildcard /usr/local/opt/libxmlsec1/lib)" ""
 	LDFLAGS += -L/usr/local/opt/libxmlsec1/lib
