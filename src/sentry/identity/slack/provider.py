@@ -11,7 +11,7 @@ class SlackIdentityProvider(OAuth2Provider):
     # TODO(epurkhiser): This identity provider is actually used for authorizing
     # the Slack application through their Workspace Token OAuth flow, not a
     # standard user access token flow.
-    oauth_access_token_url = 'https://slack.com/api/oauth.token'
+    oauth_access_token_url = 'https://slack.com/api/oauth.access'
     oauth_authorize_url = 'https://slack.com/oauth/authorize'
 
     oauth_scopes = (
