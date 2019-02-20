@@ -44,7 +44,7 @@ class SlackIntegrationProvider(IntegrationProvider):
         'channels:read',
         'groups:read',
         'users:read',
-        'chat:write',
+        'chat:write:bot',
         'links:read',
         'links:write',
         'team:read',
@@ -100,7 +100,7 @@ class SlackIntegrationProvider(IntegrationProvider):
             },
             'user_identity': {
                 'type': 'slack',
-                'external_id': data['authorizing_user_id'],
+                'external_id': data['user_id'],
                 'scopes': [],
                 'data': {},
             },
