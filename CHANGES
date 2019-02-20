@@ -1,3 +1,8 @@
+Version 9.0.0-practo1
+-----------
+
+Fixes broken Slack integration due to the workspace apps preview feature reverted by Slack
+
 Version 9.0
 -----------
 
